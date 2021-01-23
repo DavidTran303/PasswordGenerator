@@ -8,7 +8,7 @@
     var specialCharacters = ['!' + '@'+ '#' + '$' + '%' + '^' + '&' +  '*' + '('+ ')'+ '-' + '+' + '+']
           
 var passLength = ""
-var
+var password = generatePassword();
 
 
 //beginning of the function of the program
@@ -61,7 +61,7 @@ if(!passwordNumber && !lowerCase && !upperCase && !specialCharacters){
 
  // Write password to the #password input 
 function writePassword() {
-  // var password = generatePassword();
+  
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
