@@ -8,6 +8,10 @@
     var specialCharacters = ['!' + '@'+ '#' + '$' + '%' + '^' + '&' +  '*' + '('+ ')'+ '-' + '+' + '+']
           
 var passLength = ""
+var confirmPasswordNumber;
+var confirmLowerCase;
+var confirmUpperCase;
+var confirmSpecialCharacters
 var password = generatePassword();
 
 
@@ -16,20 +20,19 @@ var password = generatePassword();
 function generatePassword(){
   var passLength = prompt("What's the length of the password you desire?(The length  has to be at least 8 characters and no more than 128 characters.)");
 
-} if(!passLength){
-  alert("Please choose a number between 8-128");
-
-}else if(passLength<8 || passLength>128);{
-  //user options for the criteas offered
-
- let passwordNumber = confirm("Would you like to input numbers in your password?");
-
-let lowerCase = confirm("Would you like to input lower case in your password?");
-
-let upperCase = confirm("Would you like to input upper case in your password?");
-
-let specialCharacters = confirm("Would you like to input special characters in your password?");
+} if(passLength <= 8 || passLength >= 128){
+  //user options for the criteas offered;
+alert("Please try again, password needs to be at least 8 to 128 characters")
 }
+
+ var confirmPasswordNumber = confirm("Would you like to input numbers in your password?");
+
+var confirmLowerCase = confirm("Would you like to input lower case in your password?");
+
+var confirmUpperCase = confirm("Would you like to input upper case in your password?");
+
+var confirmSpecialCharacters = confirm("Would you like to input special characters in your password?");
+
 
 //it will alert the user if they dont choose non of the option given.
 if(!passwordNumber && !lowerCase && !upperCase && !specialCharacters){
@@ -37,7 +40,7 @@ if(!passwordNumber && !lowerCase && !upperCase && !specialCharacters){
 
 } else if(passwordNumber && lowerCase && upperCase && specialCharacters){
 
-}option =  character.concat(passwordNumber.length && lowerCase.length && upperCase.length)
+}
 
 
 
