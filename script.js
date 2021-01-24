@@ -58,7 +58,7 @@ generateBtn.addEventListener("click", function(){
     console.log("Numbers will not be generated");
   }else{
     var passwordNumber = true;
-    var value = +1;
+    var value = +2;
     console.log("Numbers will be generated");
     CHARACTER_SETS += numbs
   }
@@ -97,7 +97,7 @@ generateBtn.addEventListener("click", function(){
     console.log("Special characters will not be generated")
   }else{
     var specialCharacters = true;
-    value = +1
+    value = +2
     console.log("Special characters will be generated")
     CHARACTER_SETS += sCharacters
   }
